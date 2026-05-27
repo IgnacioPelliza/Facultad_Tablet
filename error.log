@@ -1,0 +1,5 @@
+psql:ejercicio1.sql:2: NOTICE:  drop cascades to 4 other objects
+DETAIL:  drop cascades to table persciud.ciu1
+drop cascades to table persciud.pers1
+drop cascades to table persciud.ciu2
+drop cascades to table persciud.pers2
