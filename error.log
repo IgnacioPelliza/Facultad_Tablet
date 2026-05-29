@@ -1,5 +1,13 @@
-psql:ejercicio1.sql:2: NOTICE:  drop cascades to 4 other objects
-DETAIL:  drop cascades to table persciud.ciu1
-drop cascades to table persciud.pers1
-drop cascades to table persciud.ciu2
-drop cascades to table persciud.pers2
+psql:ejercicio2.sql:1: ERROR:  schema "ejercicio2" already exists
+psql:ejercicio2.sql:7: ERROR:  relation "rubro" already exists
+psql:ejercicio2.sql:16: ERROR:  relation "producto" already exists
+psql:ejercicio2.sql:23: ERROR:  relation "factura" already exists
+psql:ejercicio2.sql:33: ERROR:  relation "tiene" already exists
+psql:ejercicio2.sql:38: ERROR:  duplicate key value violates unique constraint "rubro_pkey"
+DETAIL:  Key (codalmacen)=(1) already exists.
+psql:ejercicio2.sql:46: ERROR:  duplicate key value violates unique constraint "producto_pkey"
+DETAIL:  Key (cod)=(1) already exists.
+psql:ejercicio2.sql:53: ERROR:  duplicate key value violates unique constraint "factura_pkey"
+DETAIL:  Key (nrof)=(190) already exists.
+psql:ejercicio2.sql:63: ERROR:  duplicate key value violates unique constraint "tiene_pkey"
+DETAIL:  Key (nrof, cod)=(190, 1) already exists.

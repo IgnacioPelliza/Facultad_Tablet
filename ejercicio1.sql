@@ -82,3 +82,14 @@ INSERT INTO persCiud.pers2 VALUES ('67-676767-67', 'ELIAS VALDEZ', 1, 35, 'si');
 
 SELECT * FROM persCiud.ciu2;
 SELECT * FROM persCiud.pers2;
+
+DELETE FROM persCiud.ciu2 WHERE idCiu=1;
+
+SELECT * FROM persCiud.ciu2;
+SELECT * FROM persCiud.pers2;
+
+alter TABLE persCiud.pers2
+ADD CONSTRAINT chk_edad_positiva check (edad > 0);
+
+INSERT INTO persCiud.pers2 VALUES ('2-2222-22', 'jajajajja', 2, -34, 'si');
+SELECT * FROM persCiud.pers2;
