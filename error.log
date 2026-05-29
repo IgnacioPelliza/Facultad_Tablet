@@ -1,0 +1,4 @@
+ejercicio2_paradigma.java:20: error: incompatible types: missing return value
+      public String getApellido() {return ;}
+                                   ^
+1 error
