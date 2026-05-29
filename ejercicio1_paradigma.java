@@ -22,11 +22,11 @@ public class ejercicio1_paradigma {
   
     public static void main(String[] args) {
         List <Producto> lista = Arrays.asList(
-        new Producto("Azucar Negra", 500, 20),
-        new Producto("Azucar", 400, 80),
-        new Producto("Cafe Tostado", 1500, 50),
-        new Producto("Yerba Mate", 1800, 150),
-        new Producto("Cafe Torrado", 2100, 40)); 
+        new Producto("Azucar Negra", 500f, 20),
+        new Producto("Azucar", 400f, 80),
+        new Producto("Cafe Tostado", 1500f, 50),
+        new Producto("Yerba Mate", 1800f, 150),
+        new Producto("Cafe Torrado", 2100f, 40)); 
         lista.stream().filter(x -> x.getStock() > 10).findFirst().ifPresent(x -> 
         System.out.println(x.getNombre()));
         System.out.println( lista.stream().count() );
