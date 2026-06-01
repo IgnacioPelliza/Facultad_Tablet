@@ -17,7 +17,7 @@ public class ejercicio2_paradigma {
       public Integer getNum() {return num;}
       public String getDNI() {return dni;}
       public String getNom() {return nom;}
-      public String getApellido() {return ;}
+      public String getApellido() {return apellido;}
       
     } 
     public static void main(String[] args) {
